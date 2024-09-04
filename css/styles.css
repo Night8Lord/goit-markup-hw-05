@@ -458,6 +458,7 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(0.5);
@@ -466,13 +467,31 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.exit-svg:hover,
+.exit-svg:focus {
+  fill: #ffffff;
 }
 .exit-button {
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  position: absolute;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.exit-button:hover,
+.exit-button:focus {
+  background-color: #404bbf;
+  border: none;
 }
