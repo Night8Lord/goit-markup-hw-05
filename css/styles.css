@@ -234,6 +234,7 @@ img {
 }
 .form-foter {
   display: flex;
+  gap: 24px;
 }
 .lab-foot-form {
   gap: 24px;
